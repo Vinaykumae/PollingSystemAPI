@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polling System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Vote for your favorite fruit:</h2>
+        <form id="pollForm">
+            <label><input type="radio" name="fruit" value="apple"> Apple</label><br>
+            <label><input type="radio" name="fruit" value="banana"> Banana</label><br>
+            <label><input type="radio" name="fruit" value="cherry"> Cherry</label><br>
+            <button type="button" onclick="submitVote()">Vote</button>
+        </form>
+        <button onclick="viewResults()">View Results</button>
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
